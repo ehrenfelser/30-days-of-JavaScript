@@ -30,10 +30,14 @@ function findMatches(wordToMatch, cities) {
   });
 }
 
+//https://stackoverflow.com/questions/2254185/regular-expression-for-formatting-numbers-in-javascript
 function numberWithCommas(x) {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 }
 
+
+//https://www.w3schools.com/jsref/jsref_obj_regexp.asp 
+//The pattern is used to do pattern-matching "search-and-replace" functions on text.
 function displayMatches() {
   const matchArray = findMatches(this.value, cities);
   const html = matchArray.map(place => {
