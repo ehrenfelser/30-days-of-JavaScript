@@ -71,7 +71,7 @@
     //caption.number = 99;
 
     // how do we take a copy instead?
-   const capt2 = Object.assign({}, person { number: 99 });
+   const capt2 = Object.assign({}, person, {number: 99});
 
    console.log(capt2)
 
@@ -88,7 +88,7 @@
             }
     };
 
-    cont dev Object.assign({}, erin);
+    const dev = Object.assign({}, erin);
     const dev2 = JSON.parse(JSON.stringify(erin));
 
   </script>
