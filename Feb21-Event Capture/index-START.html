@@ -47,7 +47,7 @@ const button = document.querySelector('button');
 
   function logText(e) {
     console.log(this.classList.value);
-    // e.stopPropagation(); // stop bubbling!
+    // e.stopPropagation(); // means to stop bubbling 
     // console.log(this);
   }
 
@@ -59,7 +59,7 @@ const button = document.querySelector('button');
   button.addEventListener('click', () => {
     console.log('Click!!!');
   }, {
-    once: true
+    once: true //once is new in the browser - if set to true it will listen to a click and unbind itself 
   });
     
 </script>
