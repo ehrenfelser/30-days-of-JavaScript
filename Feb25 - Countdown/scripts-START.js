@@ -1,7 +1,7 @@
 let countdown;
 const timerDisplay = document.querySelector('.display__time-left');
 const endTime = document.querySelector('.display__end-time');
-const buttons = document.querySelectorAll('[data-time]');
+const buttons = document.querySelectorAll('[data-time]'); //selecting all buttons with a data-time
 
 function timer(seconds) {
   // clear any existing timers
@@ -34,7 +34,7 @@ function displayTimeLeft(seconds) {
 
 
 function displayEndTime(timestamp) {
-    const end = new Date(timestamp);
+    const end = new Date(timestamp); //turn time stamp into a date
     const hour = end.getHours();
     const adjustedHour = hour > 12 ? hour - 12 : hour;
     const minutes = end.getMinutes();
